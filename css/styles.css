@@ -7,3 +7,15 @@
 .form-g label {
     display: block;
 }
+
+img {
+    width: 300px;
+}
+
+h2 {
+    background-color: antiquewhite;
+}
+
+.hidden {
+    display: none;
+}
