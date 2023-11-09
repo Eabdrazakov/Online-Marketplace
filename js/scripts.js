@@ -4,6 +4,7 @@ function hiddenDiv() {
     document.getElementById("jewelry2").setAttribute("class", "hidden");
     document.getElementById("jewelry3").setAttribute("class", "hidden");
     document.getElementById("final").setAttribute("class", "hidden");
+    document.getElementById("error").setAttribute("class", "hidden");
 
 }
 
@@ -48,6 +49,8 @@ function formValue() {
         document.getElementById("jewelry2").removeAttribute("class");
     } else if (earrings) {
         document.getElementById("jewelry3").removeAttribute("class");
+    } else {
+        document.getElementById("error").removeAttribute("class", "hidden");
     }
 
 }

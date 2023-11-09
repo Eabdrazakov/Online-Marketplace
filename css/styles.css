@@ -19,3 +19,13 @@ h2 {
 .hidden {
     display: none;
 }
+
+#error {
+    color: red;
+    font-size: x-large;
+}
+
+#color {
+    background-color: aquamarine;
+    margin-right: 1100px;
+}
