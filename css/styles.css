@@ -22,10 +22,8 @@ h2 {
 
 #error {
     color: red;
-    font-size: x-large;
 }
 
 #color {
-    background-color: aquamarine;
-    margin-right: 1100px;
+    color: green;
 }
