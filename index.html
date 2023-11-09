@@ -10,13 +10,13 @@
 <body>
     <h1>Jewelry store</h1>
     <form class="best">
-        <input id="bra" type="checkbox" value="brac">
+        <input id="bra" type="checkbox" value="brac" name="jewelry">
         <label for="bra">Bracelet(45$)</label>
 
-        <input id="nec" type="checkbox" value="neck">
+        <input id="nec" type="checkbox" value="neck" name="jewelry">
         <label for="nec">Necklace(63$)</label>
 
-        <input id="ear" type="checkbox" value="earr">
+        <input id="ear" type="checkbox" value="earr" name="jewelry">
         <label for="ear">Earrings(89$)</label><br />
 
         <div class="form-g">
@@ -24,8 +24,8 @@
             <input id="name" type="text"><br />
         </div>
         <div class="form-g">
-            <label for="input1">Card number:</label>
-            <input id="inpu1" type="number"><br />
+            <label for="card">Card number:</label>
+            <input id="card" type="number"><br />
         </div>
         <div class="form-g">
             <label for="add">Shipping address:</label>
@@ -35,6 +35,9 @@
     </form>
     <div id="jewelry1" class="hidden">
         <h2>Bracelet</h2>
+        <p>Your name: <span id="person1">___</span></p>
+        <p>Your card number: <span id="person2"></span>___</p>
+        <p>Your shipping address: <span id="person3">___</span></p>
         <button type="menu">Buy(discount 10%)</button>
         <p>3 Piece Gold Bracelet Set, 18K Gold Filled Bracelet Set, Layered Bracelet, Everyday Bracelet Set,
             Hypoallergenic Brecelet Set Christmas Gift. (If you buy today
@@ -43,6 +46,9 @@
     </div>
     <biv id="jewelry2" class="hidden">
         <h2>Necklace</h2>
+        <p>Your name: <span id="person1">___</span></p>
+        <p>Your card number: <span id="person2"></span>___</p>
+        <p>Your shipping address: <span id="person3">___</span></p>
         <button type="menu">Buy(discount 15%)</button>
         <p>33 carats of diamonds pave set in this 18k white gold necklace with a chevron motif. (If you buy today
             discount 15%)</p>
@@ -50,6 +56,9 @@
     </biv>
     <div id="jewelry3" class="hidden">
         <h2>Earrings</h2>
+        <p>Your name: <span id="person1">___</span></p>
+        <p>Your card number: <span id="person2"></span>___</p>
+        <p>Your shipping address: <span id="person3">___</span></p>
         <button type="menu">Buy(discount 20%)</button>
         <p>Hoops work equally well for day or night. Explore expertly crafted diamond hoop earrings, gold hoop earrings,
             sterling silver hoop earrings and more. (If you buy today
