@@ -1,7 +1,10 @@
+// UI Logic
 function hiddenDiv() {
     document.getElementById("jewelry1").setAttribute("class", "hidden");
     document.getElementById("jewelry2").setAttribute("class", "hidden");
     document.getElementById("jewelry3").setAttribute("class", "hidden");
+    document.getElementById("final").setAttribute("class", "hidden");
+
 }
 
 function divValue() {
@@ -48,6 +51,37 @@ function formValue() {
     }
 
 }
+
+function menuResult() {
+    const buyer1 = document.getElementById("buyer1");
+    const buyer2 = document.getElementById("buyer2");
+    const buyer3 = document.getElementById("buyer3");
+
+    buyer1.addEventListener("click", function () {
+        document.getElementById("jewelry3").setAttribute("class", "hidden");
+        document.getElementById("jewelry2").setAttribute("class", "hidden");
+        document.getElementById("jewelry1").setAttribute("class", "hidden");
+        document.getElementById("final").removeAttribute("class");
+    });
+
+    buyer2.addEventListener("click", function () {
+        document.getElementById("jewelry3").setAttribute("class", "hidden");
+        document.getElementById("jewelry2").setAttribute("class", "hidden");
+        document.getElementById("jewelry1").setAttribute("class", "hidden");
+        document.getElementById("final").removeAttribute("class");
+    });
+
+    buyer3.addEventListener("click", function () {
+        document.getElementById("jewelry3").setAttribute("class", "hidden");
+        document.getElementById("jewelry2").setAttribute("class", "hidden");
+        document.getElementById("jewelry1").setAttribute("class", "hidden");
+        document.getElementById("final").removeAttribute("class");
+    });
+
+
+}
+
+// Business Logic
 function handleSubmission() {
     const form = document.querySelector("form");
     form.addEventListener("submit", function (event) {
@@ -55,7 +89,7 @@ function handleSubmission() {
         hiddenDiv();
         formValue();
         divValue();
-
+        menuResult()
     });
 }
 
